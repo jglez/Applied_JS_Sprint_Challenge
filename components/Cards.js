@@ -71,13 +71,12 @@ function cardMaker(articleObj) {
 
   // Now we have to add the click event listener 
   cardDiv.addEventListener('click', event => {
-    console.log(headlineDiv);
+    console.log(headlineDiv.textContent);
   })
 
   // Return
   return cardDiv;
 }
-
 
 // Write a function that takes a single article object and returns the following markup:
 // <div class="card"> -----------------------------------------> DONE
@@ -91,5 +90,4 @@ function cardMaker(articleObj) {
 // </div>
 //
 // Add a listener for click events so that when a user clicks on a card, the headline of the article is logged to the console.
-//
 
